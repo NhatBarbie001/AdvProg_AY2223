@@ -135,7 +135,7 @@ bool isCorrectChar(char ch, const string& mask)
 ***/
 bool isWholeWord(const string& mask)
 {
-     for(char c : mask) if(c == '_') return 0;
+     for(char c : mask) if(c == '-') return 0;
     //Write your code here
     return 1;
 }
