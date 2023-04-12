@@ -122,9 +122,6 @@ void updateSecretWord(string& secretWord, const char ch, const string& word)
         void
 ***/
 void updateEnteredChars(const char ch, string& chars){
-    bool ok = 1;
-    for(char c : chars) if(c == ch) ok = 0;
-    if(!ok) return ;
     chars += ch;
     chars += ' ';
     return ;
@@ -179,4 +176,4 @@ void processData(const char ch, const string& word,
 }
 /// mingw32-make
 /// main
-/// 
+///
